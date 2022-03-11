@@ -13,9 +13,9 @@
       "sizes": "192x192"
     }
   ],
-  "start_url": "/",
+  "start_url": "/devnight.github.io/",
   "background_color": "#3367D6",
   "display": "standalone",
-  "scope": "/",
+  "scope": "/devnight.github.io/",
   "theme_color": "#3367D6"
 }
