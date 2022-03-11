@@ -2,15 +2,8 @@ self.addEventListener('install', function (event) {
     event.waitUntil(
         caches.open('v1').then(function (cache) {
             return cache.addAll([
-                '/sw-test/',
-                '/sw-test/index.html',
-                '/sw-test/style.css',
-                '/sw-test/app.js',
-                '/sw-test/image-list.js',
-                '/sw-test/star-wars-logo.jpg',
-                '/sw-test/gallery/bountyHunters.jpg',
-                '/sw-test/gallery/myLittleVader.jpg',
-                '/sw-test/gallery/snowTroopers.jpg'
+                '/devnight.github.io/index.html',
+                '/devnight.github.io/images/icons-192.png'
             ]);
         })
     );
@@ -34,7 +27,7 @@ self.addEventListener('fetch', function (event) {
                 });
                 return response;
             }).catch(function () {
-                return caches.match('/sw-test/gallery/myLittleVader.jpg');
+                return caches.match('/devnight.github.io/images/icons-192.png');
             });
         }
     }));
