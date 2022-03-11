@@ -44,7 +44,7 @@ function imgLoad(imgJSON) {
     });
 }
 
-var imgSection = document.querySelector('section');
+var imgSection = document.querySelector('div');
 
 window.onload = function () {
 
