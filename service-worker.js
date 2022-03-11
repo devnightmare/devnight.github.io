@@ -1,5 +1,5 @@
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw-test/sw.js', { scope: '/sw-test/' }).then(function (reg) {
+    navigator.serviceWorker.register('/devnight.github.io/sw.js', { scope: '/devnight.github.io/' }).then(function (reg) {
 
         if (reg.installing) {
             console.log('Service worker installing');
