@@ -22,9 +22,7 @@ self.addEventListener('fetch', function (event) {
                 // and serve second one
                 let responseClone = response.clone();
 
-                caches.open('v1').then(function (cache) {
-                    cache.put(event.request, responseClone);
-                });
+                );
                 return response;
             }).catch(function () {
                 return caches.match('/devnight.github.io/images/icons-192.png');
